@@ -10,7 +10,7 @@
 #
 ###########################################################################
 
-testing <- as_tibble(read.csv('Data/HumanChallengeDailyTests_noNAs.csv'))
+testing <- as_tibble(read.csv('HumanChallengeDailyTests_noNAs.csv'))
 
 # Index of patients (18 total) whom:
 # treatment = TRUE (=1) or FALSE (=0)
@@ -487,7 +487,7 @@ sens_throat_PCR_weak <- sensitivities$estimate # 95% CI (0.9399696 0.9914466)
 #
 ###########################################################################
 
-testing_ext <- as_tibble(read.csv('Data/HumanChallengeDailyTests_Extended_19days.csv'))
+testing_ext <- as_tibble(read.csv('HumanChallengeDailyTests_Extended_19days.csv'))
 
 PCRtesting_ext <- testing_ext %>% filter(Assay == "qPCR")
 
